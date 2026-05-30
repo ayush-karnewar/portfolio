@@ -2,11 +2,11 @@ const projects = {
     heading: `Major Projects`,
     list: [
         {
-            image: '/assets/image.png',
+            image: '/assets/Screenshot 2026-05-30 114013.png',
             label: 'Featured Project',
-            title: 'HotSpot – AI-Powered Infrastructure Damage Detection',
+            title: 'HotSpot.ai – AI-Powered Infrastructure Damage Detection',
             description: 'A civic-tech platform using AI and Computer Vision to detect infrastructure damage — potholes, road cracks, building cracks, bridge defects, and pipeline leaks. Citizens report damage via photo uploads; officials manage reports through a centralized dashboard. Uses YOLOv8, OpenCV, and predictive analytics to assess severity, estimate repair costs, detect fraud, and prioritize maintenance. Features live mapping, automated repair planning, transparency dashboards, and citizen gamification.',
-            github: 'https://github.com/Copper369/HotSpot',
+            
             techs: ['React', 'Vite', 'FastAPI', 'YOLOv8', 'OpenCV', 'Leaflet', 'Tailwind CSS', 'JWT']
         },
         {
