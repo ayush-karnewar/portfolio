@@ -61,3 +61,42 @@
     right: 2.5%;
   }
 }
+
+// Mobile social links — shown only on mobile
+.ai-mobile-social-links {
+  display: none;
+
+  @media only screen and (max-width: 800px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    padding: 24px 0 8px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 100%);
+    backdrop-filter: blur(4px);
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+    text-decoration: none;
+    padding: 8px;
+
+    svg {
+      stroke: $themeColor3;
+      transition: stroke 0.2s ease;
+    }
+
+    &:hover svg,
+    &:active svg {
+      stroke: $themeColor4;
+    }
+  }
+}
