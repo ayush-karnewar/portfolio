@@ -4,6 +4,14 @@ const projects = {
         {
             image: '/assets/image.png',
             label: 'Featured Project',
+            title: 'HotSpot – AI-Powered Infrastructure Damage Detection',
+            description: 'A civic-tech platform using AI and Computer Vision to detect infrastructure damage — potholes, road cracks, building cracks, bridge defects, and pipeline leaks. Citizens report damage via photo uploads; officials manage reports through a centralized dashboard. Uses YOLOv8, OpenCV, and predictive analytics to assess severity, estimate repair costs, detect fraud, and prioritize maintenance. Features live mapping, automated repair planning, transparency dashboards, and citizen gamification.',
+            github: 'https://github.com/Copper369/HotSpot',
+            techs: ['React', 'Vite', 'FastAPI', 'YOLOv8', 'OpenCV', 'Leaflet', 'Tailwind CSS', 'JWT']
+        },
+        {
+            image: '/assets/image.png',
+            label: 'Featured Project',
             title: 'IDiot – AI-Powered IoT Circuit Simulator',
             description: 'Canvas-based IoT workspace with drag-drop components, real-time simulation, AI-generated layouts, and Arduino code export. Built to make IoT prototyping accessible and intelligent.',
             link: 'https://idiot-iot.vercel.app',
