@@ -100,3 +100,43 @@
     }
   }
 }
+
+// Mobile email link — fixed left side, only on mobile
+.ai-mobile-email-link {
+  display: none;
+
+  @media only screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    position: fixed;
+    left: 0;
+    bottom: 80px;
+    z-index: 10;
+    padding: 8px 6px 0 6px;
+
+    a {
+      color: $themeColor3;
+      text-decoration: none;
+      font-size: 10px;
+      letter-spacing: 2px;
+      writing-mode: vertical-rl;
+      transition: color 0.2s ease;
+
+      &:hover,
+      &:active {
+        color: $themeColor4;
+      }
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 50px;
+      background-color: $themeColor3;
+      margin-top: 4px;
+    }
+  }
+}

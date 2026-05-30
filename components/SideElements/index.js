@@ -42,6 +42,23 @@ const MobileSocialLinks = () => (
     </div>
 )
 
+const MobileEmailLink = () => (
+    <div className='ai-mobile-email-link'>
+        <a
+            href="mailto:ayushkarnewar369@gmail.com?subject=Hey%20Ayush!%20Happy%20to%20Connect!"
+            onClick={(e) => {
+                e.preventDefault();
+                const mailto = 'mailto:ayushkarnewar369@gmail.com?subject=Hey%20Ayush!%20Happy%20to%20Connect!';
+                const gmail = 'https://mail.google.com/mail/?view=cm&to=ayushkarnewar369@gmail.com&su=Hey%20Ayush!%20Happy%20to%20Connect!';
+                window.open(mailto, '_self');
+                setTimeout(() => window.open(gmail, '_blank'), 500);
+            }}
+        >
+            ayushkarnewar369@gmail.com
+        </a>
+    </div>
+)
+
 const SideElements = ({ data: {
     emailButton,
     phoneButton,
@@ -97,6 +114,8 @@ const SideElements = ({ data: {
 
             {/* Mobile social links — only visible on mobile */}
             <MobileSocialLinks />
+            {/* Mobile email — only visible on mobile */}
+            <MobileEmailLink />
         </>
     )
 }

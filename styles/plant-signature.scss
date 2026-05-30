@@ -7,6 +7,13 @@
   width: 60px;
   height: 50px;
   z-index: 50;
+
+  @media only screen and (max-width: 800px) {
+    bottom: 8px;
+    right: 8px;
+    width: 42px;
+    height: 35px;
+  }
   
   .plant-svg {
     width: 100%;
