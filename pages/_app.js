@@ -27,6 +27,7 @@ import '/styles/pre-loader.scss'
 import '/styles/certifications.scss'
 import '/styles/plant-signature.scss'
 import '/styles/blackhole.scss'
+import '/styles/ai-avatar.scss'
 
 
 function MyApp({ Component, pageProps }) {

@@ -24,7 +24,7 @@ export const dartPalettes = [
 
 const litePalettes = [
     {
-        layer1: '#F8F6F6',
+        layer1: '#FFFFFF',
         layer2: '#F5D061',
         layer3: '#2A363B',
         layer4: '#CF4647',
@@ -73,7 +73,7 @@ const litePalettes = [
         layer4: '#F7C873', 
     },
     {
-        layer1: '#F8F6F6',
+        layer1: '#FFFFFF',
         layer2: '#F5D061',
         layer3: '#2A363B',
         layer4: '#CF4647',

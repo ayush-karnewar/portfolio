@@ -19,6 +19,7 @@ import certifications from "../utils/certifications";
 import dynamic from "next/dynamic";
 
 const BlackHoleBackground = dynamic(() => import("../components/BlackHoleBackground"), { ssr: false });
+const AIAvatarFAB = dynamic(() => import("../components/AIAvatarFAB"), { ssr: false });
 
 const ViewElement = ({ children, id }) => (
   <div id={id} className="view-element">{children}</div>
@@ -30,6 +31,7 @@ export default function Home() {
       <PreLoader />
       <Cursor />
       <PlantSignature />
+      <AIAvatarFAB />
 
       <ParallaxProvider>
 

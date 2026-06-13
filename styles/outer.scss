@@ -6,11 +6,10 @@
 
     .ai-outer-text {
       position: absolute;
-      z-index: 1;
+      z-index: 3;           // text stays on top of everything
 
       .ai-outer-my-name {
         margin: 0px 0px 30px 4px;
-        // color: var(--themeColor4);
         font-size: clamp(14px, 5vw, 16px);
         font-weight: 600;
         line-height: 1;
@@ -40,13 +39,34 @@
         margin-top: 50px;
       }
     }
+
+    // ── Right-side avatar slot ─────────────────────────────────────────────
+    // z-index 3 — same level as text, so gooery (z-index 2) flows behind it
+    .ai-outer-right {
+      margin-left: auto;
+      height: 100%;
+      width: clamp(300px, 38vw, 560px);
+      flex-shrink: 0;
+      display: flex;
+      align-items: stretch;
+      z-index: 3;
+      position: relative;
+      pointer-events: all;
+
+      @media only screen and (max-width: 900px) {
+        display: none;
+      }
+    }
   }
 
+  // Gooery: z-index 2 — sits above the avatar (z-index 1) but below text (z-index 3)
   .ai-outer-gooery {
     position: absolute;
     left: 0;
+    top: 0;
     width: 100vw;
     height: 100vh;
-    flex: 1;
+    z-index: 2;
+    pointer-events: none;   // blobs are visual only, don't block clicks
   }
 }

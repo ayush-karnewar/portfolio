@@ -2,6 +2,9 @@ import React from 'react'
 import Gooery from '../../components/GooeryAnimation'
 import DecryptText from '../../components/DecryptText'
 import PropTypes from 'prop-types'
+import dynamic from 'next/dynamic'
+
+const AIAvatar = dynamic(() => import('../../components/AIAvatar'), { ssr: false })
 
 
 const Outer = ({ data: {
@@ -37,10 +40,13 @@ const Outer = ({ data: {
                             </button>
                         </div>
                     </div>
-                    <div className='ai-outer-gooery'>
-                        <Gooery />
+                    <div className='ai-outer-right'>
+                        <AIAvatar />
                     </div>
                 </div>
+            </div>
+            <div className='ai-outer-gooery'>
+                <Gooery />
             </div>
         </div>
     )
