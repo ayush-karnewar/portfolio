@@ -19,10 +19,10 @@ const SideElementsItem = ({ items, position }) => {
 }
 
 const socialLinks = {
-    github: 'https://github.com/Copper369/',
-    instagram: 'https://www.instagram.com/ayush.apk_?igsh=YWVwajlqcGxxNTJy',
+    github: 'https://github.com/ayush-karnewar/',
+    instagram: 'https://www.instagram.com/ayushkarnewar.in?igsh=YWVwajlqcGxxNTJy',
     twitter: 'https://x.com/copperrr369',
-    linkedin: 'https://www.linkedin.com/in/ayush-karnewar-016460289/',
+    linkedin: 'https://www.linkedin.com/in/ayush-karnewar/',
 }
 
 const MobileSocialLinks = () => (
