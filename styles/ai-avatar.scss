@@ -120,8 +120,16 @@
   }
 
   &__icon {
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     line-height: 1;
+    color: $themeColor2;
+
+    svg {
+      display: block;
+      fill: currentColor;
+    }
   }
 
   &__label {
@@ -141,4 +149,126 @@
   0%   { box-shadow: 0 4px 20px rgba(0,0,0,0.25), 0 0 0 0px $themeColor4; }
   60%  { box-shadow: 0 4px 20px rgba(0,0,0,0.25), 0 0 0 12px rgba(0,0,0,0); }
   100% { box-shadow: 0 4px 20px rgba(0,0,0,0.25), 0 0 0 0px rgba(0,0,0,0); }
+}
+
+// ══ Mobile bottom sheet ═══════════════════════════════════════════════════════
+
+.ai-mobile-sheet-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 9998;
+  backdrop-filter: blur(2px);
+}
+
+.ai-mobile-sheet {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: $themeColor1;
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0 -8px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  // Take up 85% of viewport height — enough room for the character
+  height: 85vh;
+  overflow: hidden;
+}
+
+.ai-mobile-sheet-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 16px 8px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.ai-mobile-sheet-drag-handle {
+  width: 40px;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.ai-mobile-sheet-close {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: $themeColor3;
+  line-height: 1;
+  padding: 6px;
+  opacity: 0.6;
+  transition: opacity 0.2s ease !important;
+
+  &:hover { opacity: 1; }
+}
+
+.ai-mobile-sheet-canvas-container {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+}
+
+.ai-mobile-sheet-status {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  min-height: 64px;
+}
+
+.ai-mobile-sheet-speaking {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: $themeColor3;
+}
+
+.ai-mobile-sheet-replay-btn {
+  font-size: 13px !important;
+  padding: 0.75rem 1.5rem !important;
+}
+
+// Pulsing dot (shared with desktop)
+.ai-avatar-pulse-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: $themeColor4;
+  animation: pulse-dot 1s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1;   transform: scale(1); }
+  50%       { opacity: 0.4; transform: scale(0.7); }
+}
+
+// Loading overlay override for mobile sheet (white bg needs visible overlay)
+.ai-mobile-loading {
+  justify-content: center !important;
+  padding-bottom: 0 !important;
+  gap: 12px;
+
+  .ai-avatar-loading-bar {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-avatar-loading-text {
+    color: $themeColor3;
+    opacity: 0.8;
+  }
 }
