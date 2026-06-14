@@ -2,6 +2,22 @@ const works = {
     heading: 'Experience Timeline',
     experiences: [
         {
+            company: 'Asia University, Taiwan',
+            jobs: [
+                {
+                    role: 'International Summer Research Intern',
+                    duration: 'Jun 2026 – Aug 2026',
+                    current: true,
+                    points: [
+                        'Selected as an International Summer Research Intern at the International Center for AI and Cyber Security Research and Innovations (CCRI), Asia University, Taiwan.',
+                        'Contributing to AI-driven cybersecurity solutions through research on intelligent authentication systems and password security analytics.',
+                        'Working on machine learning-based risk assessment and privacy-preserving security technologies.',
+                        'Collaborating within a global research environment alongside international researchers and faculty.',
+                    ],
+                }
+            ]
+        },
+        {
             company: 'DYPCET',
             jobs: [
                 {

@@ -29,22 +29,31 @@ const Tabs = ({ list }) => {
                     ))}
                 </div>
                 <div className='ai-works-tab-right'>
-                    {seletedItem && seletedItem.jobs.map(selectedItem => (
-                        <>
+                    {seletedItem && seletedItem.jobs.map((selectedItem, ji) => (
+                        <div key={ji}>
                             <div
                                 data-aos="zoom-in-right"
                                 className='ai-works-tab-right-title'>
                                 {`${selectedItem.role} @ ${seletedItem.company}`}
                             </div>
                             <div
-                                data-aos="zoom-in-right" className='ai-works-tab-right-duration'>{selectedItem.duration}</div>
+                                data-aos="zoom-in-right"
+                                className='ai-works-tab-right-duration'>
+                                {selectedItem.duration}
+                                {selectedItem.current && (
+                                    <span className='ai-works-current-badge'>
+                                        <span className='ai-works-current-dot' />
+                                        Currently Working
+                                    </span>
+                                )}
+                            </div>
                             <div
                                 data-aos="zoom-in-right" className='ai-works-tab-right-list'>
                                 {(selectedItem.points || []).map((text, i) => (
                                     <TabListItem key={i} text={text} />
                                 ))}
                             </div>
-                        </>
+                        </div>
                    ))}
                 </div>
             </div>

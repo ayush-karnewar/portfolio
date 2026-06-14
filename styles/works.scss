@@ -72,6 +72,40 @@
           font-size: 13px;
           color: $themeColor4;
           font-weight: 500;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          flex-wrap: wrap;
+        }
+
+        // ── Currently Working badge ──────────────────────────────────────
+        .ai-works-current-badge {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+          font-size: 11px;
+          font-weight: 700;
+          letter-spacing: 0.06em;
+          text-transform: uppercase;
+          color: $themeColor1;
+          background-color: $themeColor4;
+          border-radius: 20px;
+          padding: 3px 10px 3px 7px;
+        }
+
+        .ai-works-current-dot {
+          display: inline-block;
+          width: 7px;
+          height: 7px;
+          border-radius: 50%;
+          background: $themeColor1;
+          flex-shrink: 0;
+          animation: current-dot-pulse 1.4s ease-in-out infinite;
+        }
+
+        @keyframes current-dot-pulse {
+          0%, 100% { opacity: 1;   transform: scale(1); }
+          50%       { opacity: 0.4; transform: scale(0.65); }
         }
 
         .ai-works-tab-right-list {
