@@ -2,7 +2,7 @@ const mySelf = {
     heading: 'About Me',
     paragraphs: [
         `
-        Hello! I'm Ayush Karnewar, a Third Year CSE-AIML student at D.Y. Patil College of Engineering and Technology, Kolhapur. I'm a future AI Engineer, fantasised in deep-rooted sciences and passionate about emerging technologies.`,
+        Hello! I'm Ayush Karnewar, a Final Year CSE-AIML student at D.Y. Patil College of Engineering and Technology, Kolhapur. I'm a future AI Engineer, fantasised in deep-rooted sciences and passionate about emerging technologies.`,
         `
         As an innovative AI Engineer, I bring strong observational and research skills to drive problem-solving and solution design. I'm dedicated to delivering impactful AI solutions that bridge creativity, technology, and real-world applications.`,
         `
