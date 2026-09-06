@@ -44,7 +44,7 @@ function MyApp({ Component, pageProps }) {
         <meta
           name="viewport"
           content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-        <meta name="description" content="Ayush Karnewar - Innovative AI Engineer | Third Year CSE-AIML Student at DYPCET Kolhapur | Passionate about AI, Machine Learning, and emerging technologies" />
+        <meta name="description" content="Ayush Karnewar - Innovative AI Engineer | Final Year CSE-AIML Student at DYPCET Kolhapur | Passionate about AI, Machine Learning, and emerging technologies" />
         <meta name="keywords" content="Ayush Karnewar, AI Engineer, Machine Learning, AIML, DYPCET, Kolhapur, Python, RAG Systems, Voice Assistant, Chatbot, Innovation, Research" />
         <title>Ayush Karnewar</title>
 
