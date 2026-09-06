@@ -11,7 +11,7 @@ const outer = {
         'Building Impactful AI Solutions',
         'Mirror Writer'
     ],
-    desciption: `Third Year CSE-AIML student at D.Y. Patil College of Engineering & Technology, Kolhapur. Passionate about AI, prompt engineering, and deep-rooted sciences. Dedicated to creating innovative solutions that bridge technology and real-world applications.`,
+    desciption: `Final Year CSE-AIML student at D.Y. Patil College of Engineering & Technology, Kolhapur. Passionate about AI, prompt engineering, and deep-rooted sciences. Dedicated to creating innovative solutions that bridge technology and real-world applications.`,
     button: {
         label: 'Contact me!',
         onClick: () => openLink('mailto:ayushkarnewar369@gmail.com?subject=Hello')
